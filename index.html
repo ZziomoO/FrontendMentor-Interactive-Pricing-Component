@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<section>
+  <header>
+    <img src="images/pattern-circles.svg" id="header_background">
+    <h1>Simple, traffic-based pricing</h1>
+    <p>Sign-up for our 30-day trial. No credit card required.</p> 
+  </header>
+
+  <main>
+    <article>
+      <div id="calc_result">
+        <b id="page_views">100K PAGEVIEWS</b>
+        <div id="price_result">
+          <h2 id="price_holder">$16.00</h2>
+          <p id="time_holder">/ month</p>
+        </div>
+        <input type="range" min="1" max="5" value="3" class="slider" id="range" oninput="setPrice()">
+      </div>
+    
+      <div id="checkbox_container">
+        <p>Monthly Billing</p>
+        <input type="checkbox" id="checkbox" onchange='setPrice()' style="display: none;">
+        <label for="checkbox"><div id="checkbox_slider"><div id="checkbox_whell" class="left_whell"></div></div></label>
+        <p>Yearly Billing</p>
+        <h3>25% discount</h3>
+        <h4>-25%</h4>
+      </div>
+    </article>
+  
+    <footer>
+      <div id="thin_container">
+        <div><img src="images/icon-check.svg"><p class="thin_paragraph">Unlimited websites</p></div>
+        <div><img src="images/icon-check.svg"><p class="thin_paragraph">100% data ownership</p></div>
+        <div><img src="images/icon-check.svg"><p class="thin_paragraph">Email reports</p></div>
+      </div>
+      <input type="button" value="Start my trial">
+    </footer>
+  </main>
+</section>
+</body>
+</html>
