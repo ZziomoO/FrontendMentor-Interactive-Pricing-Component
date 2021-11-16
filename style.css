@@ -16,7 +16,6 @@ section{
     background-image: url(images/bg-pattern.svg);
     background-size: 100% auto;
     background-repeat: no-repeat;
-    overflow: hidden;
 }
 header{
     width: 400px;
